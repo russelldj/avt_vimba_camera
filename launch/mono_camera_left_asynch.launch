@@ -1,0 +1,5 @@
+<launch>
+  <include file="/home/uav-xavier/sensors_ws/src/avt_vimba_camera/launch/mono_camera_asynch_config.launch">
+    <arg name="guid" default="DEV_1AB22C00BFE0" doc="The GUID for the camera to connect to"/>
+   </include>
+</launch>
