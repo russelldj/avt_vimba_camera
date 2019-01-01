@@ -2,7 +2,7 @@
   <!-- Driver parameters, these parameters affect the way the ROS driver works -->
   <arg name="name" default="camera" doc="The name of the camera"/>
   <arg name="ip" default="" doc="The IP for the camera to connect to"/>
-  <arg name="guid" default="DEV_1AB22C00BFE0" doc="The GUID for the camera to connect to"/>
+  <arg name="guid" default="DEV_1AB22C012B08" doc="The GUID for the camera to connect to"/>
   <arg name="frame_id" default="$(arg name)" doc="The frame id of the camera"/>
   <arg name="use_measurement_time" default="false" doc="Use the measurement time from the camera"/>
   <arg name="ptp_offset" default="-37" doc="Offset to add to the timestamp from the camera (s).
