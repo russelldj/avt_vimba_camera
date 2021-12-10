@@ -1,8 +1,8 @@
 <launch>
   <arg name="guid" default="none"/>
   <include file="/home/uav-xavier/sensors_ws/src/avt_vimba_camera/launch/mono_camera.launch">
-    <param name="guid" value="$(arg guid)"/>
-    <param name="trigger_source" value="Line0"/>
-    <param name="trigger_mode" value="On"/>
+    <arg name="guid" value="$(arg guid)"/>
+    <arg name="trigger_source" value="Line0"/>
+    <arg name="trigger_mode" value="On"/>
   </include>
 </launch>
