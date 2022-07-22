@@ -5,8 +5,7 @@
   <arg name="guid" default="DEV_1AB22C00BFE0" doc="The GUID for the camera to connect to"/>
   <arg name="frame_id" default="$(arg name)" doc="The frame id of the camera"/>
   <arg name="use_measurement_time" default="false" doc="Use the measurement time from the camera"/>
-  <arg name="ptp_offset" default="-37" doc="Offset to add to the timestamp from the camera (s).
-    Useful for converting from TAI to UTC time. Only applies if use_measurement_time is true"/>
+  <arg name="ptp_offset" default="-37" doc="Offset to add to the timestamp from the camera (s).  Useful for converting from TAI to UTC time. Only applies if use_measurement_time is true"/>
   <arg name="camera_info_url" default="file://$(find avt_vimba_camera)/calibrations/calibration_example.yaml"/>
   <arg name="print_all_features" default="false" doc="Show all camera features on the console during startup"/>
   <arg name="image_proc" default="false" doc="Launch image_proc with driver"/>
@@ -24,8 +23,8 @@
   <arg name="trigger_activation" default="RisingEdge"/>
   <arg name="trigger_delay" default="0.0"/>
   <!-- Exposure -->
-  <arg name="exposure" default="50000"/>
-  <arg name="exposure_auto" default="Continuous"/>
+  <arg name="exposure" default="200"/>
+  <arg name="exposure_auto" default="Off"/>
   <arg name="exposure_auto_alg" default="FitRange"/>
   <arg name="exposure_auto_tol" default="5"/>
   <arg name="exposure_auto_max" default="50000"/>
@@ -34,8 +33,8 @@
   <arg name="exposure_auto_rate" default="50000"/>
   <arg name="exposure_auto_target" default="50000"/>
   <!-- Gain -->
-  <arg name="gain" default="0"/>
-  <arg name="gain_auto" default="Continuous"/>
+  <arg name="gain" default="10"/>
+  <arg name="gain_auto" default="Off"/>
   <arg name="gain_auto_adjust_tol" default="5"/>
   <arg name="gain_auto_max" default="32"/>
   <arg name="gain_auto_min" default="0"/>
@@ -54,8 +53,8 @@
   <arg name="decimation_x" default="1"/>
   <arg name="decimation_y" default="1"/>
   <!-- ROI -->
-  <arg name="width" default="1920"/>
-  <arg name="height" default="1440"/>
+  <arg name="width" default="3016"/>
+  <arg name="height" default="3012"/>
   <arg name="offset_x" default="750"/>
   <arg name="offset_y" default="750"/>
   <!-- Pixel Format -->
