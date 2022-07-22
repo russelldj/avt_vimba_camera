@@ -911,7 +911,7 @@ void AvtVimbaCamera::updateExposureConfig(Config& config)
 
   if (config.exposure != config_.exposure || on_init_)
   {
-    configureFeature("ExposureTimeAbs", static_cast<float>(config.exposure), config.exposure);
+    configureFeature("ExposureTime", static_cast<float>(config.exposure), config.exposure);
   }
   if (config.exposure_auto != config_.exposure_auto || on_init_)
   {
@@ -1167,7 +1167,7 @@ void AvtVimbaCamera::getCurrentState(diagnostic_updater::DiagnosticStatusWrapper
 {
   stat.add("ID", guid_);
   stat.add("Info", diagnostic_msg_);
-  stat.add("Temperature", getDeviceTemp());
+  //stat.add("Temperature", getDeviceTemp());
 
   switch (camera_state_)
   {
