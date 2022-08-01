@@ -1,0 +1,8 @@
+<launch>
+  <arg name="guid" default="none"/>
+  <include file="/home/uav-nuc/catkin_ws/sensors_ws/src/avt_vimba_camera/launch/mono_camera.launch">
+    <arg name="guid" value="$(arg guid)"/>
+    <arg name="trigger_source" value="Line0"/>
+    <arg name="trigger_mode" value="On"/>
+  </include>
+</launch>
