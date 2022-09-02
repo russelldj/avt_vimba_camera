@@ -15,7 +15,7 @@
 
   <!-- Acquisition -->
   <arg name="acquisition_mode" default="Continuous"/>
-  <arg name="acquisition_rate" default="10"/>
+  <arg name="acquisition_rate" default="20"/>
   <!-- Trigger -->
   <arg name="trigger_source" default="Line0"/>
   <arg name="trigger_mode" default="On"/>
@@ -23,7 +23,7 @@
   <arg name="trigger_activation" default="RisingEdge"/>
   <arg name="trigger_delay" default="0.0"/>
   <!-- Exposure -->
-  <arg name="exposure" default="5000"/>
+  <arg name="exposure" default="200"/>
   <arg name="exposure_auto" default="Off"/>
   <arg name="exposure_auto_alg" default="FitRange"/>
   <arg name="exposure_auto_tol" default="5"/>
