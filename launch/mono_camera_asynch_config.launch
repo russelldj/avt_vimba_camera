@@ -1,5 +1,7 @@
 <launch>
+  <arg name="guid" default="none"/>
   <include file="$(find avt_vimba_camera)/launch/mono_camera.launch">
+    <arg name="guid" value="$(arg guid)"/>
     <arg name="trigger_source" default="Software"/>
     <arg name="trigger_mode" default="Off"/>
   </include>

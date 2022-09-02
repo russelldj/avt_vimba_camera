@@ -1,5 +1,7 @@
 <launch>
-  <include file="$(find avt_vimba_camera)/launch/mono_camera_asynch_config.launch">
-    <arg name="guid" value="DEV_1AB22C012B08"/>
-  </include>
+  <group ns="right">
+    <include file="$(find avt_vimba_camera)/launch/mono_camera_asynch_config.launch">
+      <arg name="guid" value="DEV_1AB22C012B08"/>
+    </include>
+  </group>
 </launch>
