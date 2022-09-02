@@ -1,5 +1,5 @@
 <launch>
-  <include file="/home/uav-xavier/sensors_ws/src/avt_vimba_camera/launch/mono_camera.launch">
+  <include file="$(find avt_vimba_camera)/launch/mono_camera.launch">
     <arg name="trigger_source" default="Software"/>
     <arg name="trigger_mode" default="Off"/>
   </include>

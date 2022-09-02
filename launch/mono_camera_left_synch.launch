@@ -1,5 +1,5 @@
 <launch>
-  <include file="/home/uav-xavier/sensors_ws/src/avt_vimba_camera/launch/mono_camera_synch_config.launch">
+  <include file="$(find avt_vimba_camera)/launch/mono_camera_synch_config.launch">
     <arg name="guid" value="DEV_1AB22C00BFE0"/>
   </include>
 </launch>
