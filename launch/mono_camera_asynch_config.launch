@@ -1,8 +1,14 @@
 <launch>
   <arg name="guid" default="none"/>
+  <arg name="exposure" default="50000"/>
+  <arg name="pixel_format" default="RGB8"/> <!--BayerRG8-->
+  <arg name="camera_info_url" default="file://$(find avt_vimba_camera)/calibrations/calibration_example.yaml"/>
   <include file="$(find avt_vimba_camera)/launch/mono_camera.launch">
     <arg name="guid" value="$(arg guid)"/>
     <arg name="trigger_source" default="Software"/>
     <arg name="trigger_mode" default="Off"/>
+    <arg name="exposure" value="$(arg exposure)"/>
+    <arg name="pixel_format" value="$(arg pixel_format)"/>
+    <arg name="camera_info_url" value="$(arg camera_info_url)"/>
   </include>
 </launch>

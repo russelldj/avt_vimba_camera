@@ -69,8 +69,8 @@ private:
   bool use_measurement_time_;
   int32_t ptp_offset_;
 
-  image_transport::ImageTransport it_;
-  image_transport::CameraPublisher pub_;
+  // image_transport::ImageTransport it_;
+  // image_transport::CameraPublisher pub_;
 
   std::shared_ptr<camera_info_manager::CameraInfoManager> info_man_;
 

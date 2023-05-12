@@ -8,7 +8,7 @@
   <arg name="ptp_offset" default="-37" doc="Offset to add to the timestamp from the camera (s).  Useful for converting from TAI to UTC time. Only applies if use_measurement_time is true"/>
   <arg name="camera_info_url" default="file://$(find avt_vimba_camera)/calibrations/calibration_example.yaml"/>
   <arg name="print_all_features" default="false" doc="Show all camera features on the console during startup"/>
-  <arg name="image_proc" default="false" doc="Launch image_proc with driver"/>
+  <!-- <arg name="image_proc" default="false" doc="Launch image_proc with driver"/> -->
 
   <!-- Camera parameters, these parameters are used to configure the AVT camera upon startup -->
   <!-- See the cfg/AvtVimbaCamera.cfg file for documentation -->
@@ -53,10 +53,10 @@
   <arg name="decimation_x" default="1"/>
   <arg name="decimation_y" default="1"/>
   <!-- ROI -->
-  <arg name="width" default="3016"/> <!--3016,2448-->
-  <arg name="height" default="3012"/>  <!--3012, 2048-->
-  <arg name="offset_x" default="750"/> <!--750, 1032-->
-  <arg name="offset_y" default="750"/> <!--750, 1232-->
+  <arg name="width" default="2448"/> <!--3016,2448-->
+  <arg name="height" default="2048"/>  <!--3012, 2048-->
+  <arg name="offset_x" default="1032"/> <!--750, 1032-->
+  <arg name="offset_y" default="1232"/> <!--750, 1232-->
   <!-- Pixel Format -->
   <arg name="pixel_format" default="BayerRG8"/>
   <!-- Bandwidth -->
@@ -77,9 +77,9 @@
   <arg name="iris_video_level_min" default="110"/>
   <arg name="iris_video_level_max" default="110"/>
 
-  <group if="$(arg image_proc)" ns="$(arg name)">
+  <!-- <group if="$(arg image_proc)" ns="$(arg name)">
     <node name="image_proc" pkg="image_proc" type="image_proc"/>
-  </group>
+  </group> -->
 
   <node name="$(arg name)" pkg="avt_vimba_camera" type="mono_camera_node" output="screen">
     <param name="ip" value="$(arg ip)"/>

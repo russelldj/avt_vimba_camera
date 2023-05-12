@@ -2,6 +2,7 @@
   <group ns="right">
     <include file="$(find avt_vimba_camera)/launch/mono_camera_asynch_config.launch">
       <arg name="guid" value="DEV_1AB22C012B08"/>
+      <arg name="camera_info_url" value="file:///home/uav-nuc/calibration_files/office/right_mono_asynch.yaml"/>
     </include>
   </group>
 </launch>

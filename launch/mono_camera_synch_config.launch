@@ -1,8 +1,10 @@
 <launch>
   <arg name="guid" default="none"/>
+  <arg name="exposure" default="20000"/> <!--200,800-->
   <include file="$(find avt_vimba_camera)/launch/mono_camera.launch">
     <arg name="guid" value="$(arg guid)"/>
     <arg name="trigger_source" value="Line0"/>
     <arg name="trigger_mode" value="On"/>
+    <arg name="exposure" value="$(arg exposure)"/>
   </include>
 </launch>
